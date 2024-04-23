@@ -1,0 +1,19 @@
+[project]
+name = "localcontext"
+description = "Create local Context(s) to a Package, passed using Decorator(s)"
+version ='0.1.0'
+
+[tool.poetry]
+name = "localcontext"
+version = "0.1.0"
+description = "Create local Context(s) to a Package, passed using Decorator(s)"
+authors = ["hoefkensj <hoefkens.j@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
