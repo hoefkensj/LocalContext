@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
-
-def main():
-	pass
-
-
-if __name__ == '__main__':
-	main()
+from typedef import LocalContext
+from Clict import Clict
+if not globals().get('CTX'):
+	globals()['CTX']=Clict()

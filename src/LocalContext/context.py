@@ -2,20 +2,17 @@
 from LocalContext.typedef import LocalContext
 from Clict import Clict
 def New():
-	localctx=Clict()
+	global CTX
 	def new(name='ctx'):
-		nonlocal localctx
-		ctx=LocalContext()
-		localctx[f'ctx_{name}']=ctx
-		return ctx
+		nonlocal CTX
+		CTX[name.lower()]=LocalContext()
+		return CTX[name.lower()]
 	return new
-def CurrentCtx(fn):
-	def currentctx(*a,**k)
+
+def Ctx(fn):
+	def currentctx(*a,**k):
 		return fn(ctx,*a,**k)
 	return currentctx
-	def main():
-	pass
-
 
 if __name__ == '__main__':
 	a=globals()
